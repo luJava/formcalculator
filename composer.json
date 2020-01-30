@@ -1,0 +1,15 @@
+{
+    
+    "description": "calculadora para formulário",
+    "authors": [
+        {
+            "name": "Luciano Correia",
+            "email": "lucianocorreia.java@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.8",
+        "twbs/bootstrap": "4.1.0",
+        "components/jquery":"3.4.1"
+    }
+}

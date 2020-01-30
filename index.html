@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Hcode Treinamentos">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/calculator.css" />
+
+</head>
+
+<body>
+
+
+
+  <!-- Field with calculator -->
+  <form>
+    <div class="form-group">
+      <div class="col-md-4 mb-3">
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><a data-toggle="modal" data-target=".modalCalculatore"><img src="img/calc.png" class="img-fluid" width="32px"></a></span>
+          </div>
+          <input type="text" class="form-control" id="total" value="">
+
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- Field with calculator -->
+
+  <!-- Modal calculator -->
+  <div class="modal fade modalCalculatore" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+
+        <div class="center">
+          <div id="calculator">
+            <header>
+              <div id="historic">
+
+              </div>
+              <div id="result">
+              </div>
+
+            </header>
+            <section class="container">
+              <div class="row">
+
+
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-others col-sm">CE</button>
+                <button type="button" class="btn btn-others col-sm">C</button>
+                <button type="button" class="btn btn-others col-sm">←</button>
+                <button type="button" class="btn btn-others col-sm">÷</button>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-number col-sm">7</button>
+                <button type="button" class="btn btn-number col-sm">8</button>
+                <button type="button" class="btn btn-number col-sm">9</button>
+                <button type="button" class="btn btn-others col-sm">X</button>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-number col-sm">4</button>
+                <button type="button" class="btn btn-number col-sm">5</button>
+                <button type="button" class="btn btn-number col-sm">6</button>
+                <button type="button" class="btn btn-others col-sm">-</button>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-number col-sm">1</button>
+                <button type="button" class="btn btn-number col-sm">2</button>
+                <button type="button" class="btn btn-number col-sm">3</button>
+                <button type="button" class="btn btn-others col-sm">+</button>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-others col-sm">Add</button>
+                <button type="button" class="btn btn-number col-sm">0</button>
+                <button type="button" class="btn btn-others col-sm">,</button>
+                <button type="button" class="btn btn-others col-sm">=</button>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Modal calculator -->
+
+
+
+  <!-- Composer -->
+  <script src="vendor/components/jquery/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js" /></script>
+
+  <!-- Main -->
+  <script src="javascripts/Controller/CalcController.js"></script>
+  <script src="javascripts/Calculator.js"></script>
+
+</body>
+
+</html>
